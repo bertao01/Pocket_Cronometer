@@ -65,12 +65,6 @@ function getShowTime() {
     minutes = (minutes<10) ? "0"+minutes : minutes
     seconds = (seconds<10) ? "0"+seconds : seconds
 
-    if (miliseconds < 100 & miliseconds >= 10){
-        miliseconds = "0" + miliseconds
-    } else if (miliseconds < 10){
-        miliseconds = "00" + miliseconds
-    }
-
     for(i=1 ; miliseconds > (i*1000) ; i){
         miliseconds = miliseconds - (i*1000)
     }
